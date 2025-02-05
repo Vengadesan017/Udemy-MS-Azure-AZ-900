@@ -59,7 +59,8 @@
   - Region (based on usage and high speed connection) 60+ region
   - Sovereign azure (not connect to public cloud , need subscription ,diff standard)
   - Zone ( seperate center in each region with high speed network)
-  
+  - Resource 
+    
       
 
 
