@@ -96,9 +96,31 @@
      - use private access
 
 # Demo
-- create VM with OS , download RDS file connection tap to open the VM
-- create App service with runtime stack py3.8 or .net 8 and also os , copy the default url . (na manul installtion needed automatic from git rep)
+- VM
+   - create VM with OS
+   - download RDP(Remote Desktop Protocol file) file connection tap to open the VM
+- App service
+  - create App service with runtime stack py3.8 or .net 8 and also os
+  -  copy the default url . paste in browser (no manul installtion needed automatic from git rep)
+  -  can change the resource size( scaling 1.manual 2.auto rule based)
+- Function App
+   - create function instance with code or container
+   - with tech stack( programming language) with vertion version
+   - with OS
+   - can also scale with premium plan
+   - set template like HTTP trigger, timer to code
+   - copy the dynamic link and paste in brower which is access by any one 
 
+- Container instance
+   - create with os image
+   - for testing  in low power h/w
+- Container App
+   - create with container app environment (image file)
+   - can scale
+   - Public dynamic domain url is also available
+- delete instance
+   - go to resource group
+   - delete resource group option
 
 
 
