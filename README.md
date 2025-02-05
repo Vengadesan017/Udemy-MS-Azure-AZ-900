@@ -95,6 +95,10 @@
      - Public access from selectged VN and IP address
      - use private access
 
+# Demo
+- create VM with OS , download RDS file connection tap to open the VM
+- create App service with runtime stack py3.8 or .net 8 and also os , copy the default url . (na manul installtion needed automatic from git rep)
+
 
 
 
