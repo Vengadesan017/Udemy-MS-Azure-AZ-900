@@ -161,13 +161,68 @@
       - used to upload BIG size data 
       - ms send to data box to your place you copy your data and ship the data box to ms azure they copy data to your colud
 
-     
+# Identity Management
+- person , Application , Device
+- Login with password , key , certificate
+- use Entra ID( use protocal SAML & Oauth ) used Active directory to handle authentication(use userId & password to access) and authorization( ensuring user is permitted)
+- benifit of entra ID 
+  - security
+  - easier support
+  - single sign-on
+- use multi factor Authentication (ms auth app , mail,FIDO2 security key , hardware token, s/w token, sms)
+- Passwordless - high security & convenient - the aboue methods ( and also figure print,face ,pin,bluetooth)
+- Role Based control
+  - create role
+  - IT Security
+  - assign user to those role
+  - Roles 1.Reader 2.COntributor 3.Owner
+- Zero trust model  (everthing inside the corporate network is safe but outside is not safe) use security policy enforcement
+- MS defender for cloud ( enhance security on your subscription) tool can continually assess your cross-cloud resources for security issues and allows you to review your secure score?
+
+# Cost management
+- flexible pricing (/sec , /hr , /month , /GB, /CPU)
+- Factors (time, usage, service tier, power, s/w licence)
+- caveat (free plan)
+- use price calculator
+- Total cost Ownership ( used to estimate the cost saving instead of on premises) and compare both 
+- Resource tag - create multiple tag for instance then use that tag for view instance report based on tags
+
+# Governance and Compliance
+- company had set of rules for security , legal governance
+- type of rule
+  - all server must be running s/w within ms guideline
+  - minimum 24hr od backub
+  - firewalls block all inbound posrt excep 443
+  - only operation suppoer can reboot production servver
+- azure policy (ex: must sql server 12.0 . automatically apply tagging...)
+  - go to palicy page search policy then select policy then assign the policy with scope
+- Locks
+  - read only lock - only access to read
+  - not delete lock - not able to delete
+- Microsoft purview - Data security, governance, and compliance together.
+
+# Azure portol
+- GUI based interface come with dashboard and we will create and manage instance and also see and paying the bill
+- Also had termical for Command line interface
+  - by defaul linux terminal we can view by az vm list
+  - also download azure  cli in our local system
+
+# Azure arc
+- cross platform vm and container management
+- Work with Azure policy , Kubernetes clusters
+
+# Infrastructure as code
+- do backup all the config , storage , db setting ,load banlancer setting in github
+
+# ARM Template - Azure resource manager - management layer
+- all action like create , update , delete from CLI, PowerShell,portal reast client to instance (azure resource) goes throug the arm layer
+- during the creation of instance we can see the arm template and create the templete that template save all the info to create instance, it can help rto quick creation of instance repeatedly
   
-   
+# Monitoring
+- Advisor - give recommandation for cost , security, reliablity, performance, operation excellecnce
+- Health service - give alert when the any region had issue
+- Monitoring insight - is apm dor developer and devops which detect the perfomance automatically and include poserful analytics tools to diagnose the issue. which an option during the instance creating process
+- Monitoring logs - view the Logs with the scope(VM, storage account ) and store in table then show in chart
+  
 
-
-
-
-
-
-    
+  
