@@ -59,9 +59,41 @@
   - Region (based on usage and high speed connection) 60+ region
   - Sovereign azure (not connect to public cloud , need subscription ,diff standard)
   - Zone ( seperate center in each region with high speed network)
-  - Resource 
-    
-      
+  - Resource (Resources < Resources grp < subscription < Management grp)
+     - resource - are hardware , software
+     - resource group - Logical group of resources (create delete all resource at time )
+     - Subsription - billing unit
+     - Management group - multiple subsription for single administration
+
+# compute service
+ - Types
+    - Virtual machines - laas 
+    - VM scale set - top of vm - scale up / scale down with load balancer
+    - App services -app in cloud - paas
+    - Azure Container Instance  - single instance , quickest way to deploy a container
+    - Azure kubernetes service
+    - Azure virtual desktop - v desktop run in cloud
+    - Azure Function - small pieces od code run in cloud - 1million execution / month as free for 1st month by serverless model
+  - Availability set
+    - fault isolation - separete power , network switch for update one at a time
+# network service
+  - Virtual network as laas
+  - it be a IPV4 or IPV 6 but is can't access outside of azure because is private
+  - all VN is divided as more subnets
+  - the one vm had atleast one subnet
+  - peering
+    - connect to subnet together
+    - communication between vm using subnet on different network is blocked so use peering
+  - DNS
+    - can use domain name for ip but it internally use only
+  - VPN
+    - inside azure can install vpn gateway
+  - Express Route
+     - private connection from isp to Azure endpoint for high speed comminication
+  - Networking Option in Azure
+     - Public access from all network
+     - Public access from selectged VN and IP address
+     - use private access
 
 
 
