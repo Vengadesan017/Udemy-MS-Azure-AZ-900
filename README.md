@@ -95,6 +95,32 @@
      - Public access from selectged VN and IP address
      - use private access
 
+# Storage (laas) GPv2
+ - Redundancy - make 3 copy of each data
+ - Global redundance - 3 local and 3 in another region
+ - Access tier
+    - Hot - default balanca access
+    - cool -cheaper storage , expensive read , write
+    - Cold - Much cheaper , more expensive read ,write
+    - Archive - connot get immediate access cheapest
+ - standared storage 
+    - contain , file , queue , table
+    - upto 5 PB
+    - pay for use
+    - cheap
+ - Data lake
+   - Extremely large storage
+   - upto PB EB
+   - for big data
+ - Binary Large Object BLOB
+   - txt pdf zip csv jpg files
+   - Unstructure
+   - stored loosely in container
+   - publick or private
+ - Container storage
+   - multiple container contain multiple blob
+  
+
 # Demo
 - VM
    - create VM with OS
@@ -121,7 +147,23 @@
 - delete instance
    - go to resource group
    - delete resource group option
+- Storage Account
+   - create with performance , account type(block , file , page) , redundance(local,global)
+   - then create container as public or private
+   - then upload the blob
+   - to access private fils generaTE SAS token that give new url
+   - also set rules like move automatically hot to cold
+   - use storage explorer to access the contain
+   -  Azure file sync used to synchronize data between on premises server and Azure file share
+   - use Azcopy to copy bluk data from one container to another
+     azcopy copy source_SAS_KEY Destination_SAS_KEY
+   - Data box 100TB or DataBOx Heavy 1PB or DataBoxDisk 8TB
+      - used to upload BIG size data 
+      - ms send to data box to your place you copy your data and ship the data box to ms azure they copy data to your colud
 
+     
+  
+   
 
 
 
