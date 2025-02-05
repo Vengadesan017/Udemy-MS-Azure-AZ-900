@@ -6,13 +6,13 @@
 - Iaas ( Computer, Storage, Networking) - VM - pay/sec - Multiple hardware -v network as free
 - Paas ( Middleware , dev tool, sql server.. load balancer..) - Azure app service - run code
 - Saas (MS office , drive )
-### others
+#### others
 - On premise
 - Serverless (low power hardware) - no option to change hardware
   - Container apps
   - kubernetes
   - SQL DB
-  - 
+    
 
 # cloud type
 - public
@@ -56,7 +56,8 @@
     - PowerShell
       
 # Core Architecture components
-  - Region  
+  - Region (based on usage and high speed connection) 60+ region
+  - Sovereign azure (not connect to public cloud , need subscription ,diff standard)
 
   
       
