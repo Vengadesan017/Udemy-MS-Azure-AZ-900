@@ -1,6 +1,6 @@
 # MS-Azure-AZ-900
 
-- Basuc level MS certification
+- Basic level MS certification
 
 # Cloud service
 - Iaas ( Computer, Storage, Networking) - VM - pay/sec - Multiple hardware -v network as free
